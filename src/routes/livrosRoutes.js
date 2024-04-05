@@ -17,7 +17,7 @@ routes.get("/livros/:id", LivroController.listarLivrosPorID);
 routes.post("/livros", LivroController.cadastrarLivro);
 
 // Rota POST para atualizar um livro existente por seu ID, tratada pelo método atualizarLivro do controlador LivroController
-routes.post("/livros/:id", LivroController.atualizarLivro);
+routes.put("/livros/:id", LivroController.atualizarLivro);
 
 // Rota DELETE para deletar um livro existente por seu ID, tratada pelo método deletarLivro do controlador LivroController
 routes.delete("/livros/:id", LivroController.deletarLivro);
